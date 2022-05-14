@@ -26,7 +26,7 @@ class Walker {
     strokeWeight(2);
     fill(51);
     stroke(0);
-    ellipse(this.position.x, this.position.y, 48, 48);
+    ellipse(this.position.x, this.position.y, 70, 70);
   }
 
   walk() {
