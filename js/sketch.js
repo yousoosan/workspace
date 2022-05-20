@@ -5,7 +5,7 @@
 let walker;
 
 function setup() {
-  createCanvas(640, 360); //creating canvas of size 640 x 360
+  createCanvas(windowWidth, windowHeight); //creating canvas of size 640 x 360
   walker = new Walker(); //creating an instance/object of class Walker
   background(127); // creating a grey background for canvas
 }
@@ -17,7 +17,7 @@ function draw() {
 
 class Walker {
   constructor() {
-    this.position = createVector(width / 2, height / 2);
+    this.position = createVector(0,0);
     // Perlin noise x and y offset
     this.noff = createVector(random(1000), random(1000));
   }
